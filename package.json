@@ -1,0 +1,19 @@
+{
+  "name": "ksl-tender-events",
+  "version": "1.0.0",
+  "description": "KSL tender event writer and daily report section for LAX seat ec7b155a (SEAT7). Pure, append-only JSONL, validates events, counts each step, lists anomalies.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/report.mjs",
+  "exports": {
+    ".": "./src/report.mjs",
+    "./events": "./src/events.mjs",
+    "./log": "./src/log.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
